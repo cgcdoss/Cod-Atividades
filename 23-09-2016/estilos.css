@@ -27,11 +27,42 @@ article h2{
 	display: inline;
 }
 
+#menu{
+	border-bottom: 2px solid #BEBEBE;
+}
+
+#topo nav ul{
+	background-color: #ababab;
+}
 a:link{
 	text-decoration: none;
 	color: black;
-	background-color: #696969;
+	font-weight: bold;
 }
-#menu ul a:hover{
+/*#menu ul a:hover{
 	font-size: 18px;
+}*/
+article footer{
+	text-align: right;
+	color: #BEBEBE;
+}
+#secao{
+	float: left;
+	width: 660px;
+	text-align: justify;
+}
+#coluna{
+	float: left;
+	width: 300px;
+}
+#coluna h3{
+	color: #696969;
+}
+
+#rodape{
+	clear: both;
+	border-top: 1px solid #BEBEBE;
+	text-align: center;
+	font-size: 12px;
+	color: #696969;
 }
