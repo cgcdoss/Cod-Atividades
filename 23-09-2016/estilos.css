@@ -33,6 +33,7 @@ article h2{
 
 #topo nav ul{
 	background-color: #ababab;
+	border-radius: 15px;
 }
 a:link{
 	text-decoration: none;
