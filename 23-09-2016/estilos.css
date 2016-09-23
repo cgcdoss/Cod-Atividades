@@ -74,6 +74,8 @@ article footer{
 
 #secao figure figcaption{
 	text-align: center;
+	font-style: italic;
+	font-size: 10px;
 }
 
 #menu ul li a:hover{
