@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aa</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		// window.location.href = "http://www.google.com";
+		// window.open("http://www.google.com/", "minhaJanela", "width=800, height=600");
+		// alert('Isso é muito chato!');
+		function abrirJanela(){
+			for (var i = 0; i <= 1; i++) {
+				window.open('http://www.google.com');
+			}
+		}
+		function acende(){
+			document.getElementById('lampada').src="lampada-acesa.jpg";
+		}
+		function apaga(){
+			document.getElementById('lampada').src="lampada-apagada.jpg";	
+		}
+	</script>
+</head>
+	<body>
+		<h3>Exemplo de eventos</h3>
+		<input type="button" value="Clique!" onclick="abrirJanela()">
+		<br><br>
+		<input type="button" value="Passe o mouse!">
+		<br>
+		<img id="lampada" src="lampada-apagada.jpg" onmouseover="acende()" onmouseout="apaga()">
+	</body>
+</html>
