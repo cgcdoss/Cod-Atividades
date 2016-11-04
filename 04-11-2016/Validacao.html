@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Validação de Formulário</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			function validar(){
+				var senha1 = document.getElementById('senha1').value;
+				var senha2 = document.getElementById('senha2').value;
+				if (document.getElementById('nome').value.length == 0) {
+					// alert('Informe o nome.');
+					document.getElementById('msg').value = 'Informe o nome!';
+					// document.getElementById('ast').attr(style="color: black;");
+					return false;
+									
+				}
+				if (senha1 != senha2) {
+					document.getElementById('msg').value = "Senha diferentes.";
+					return false;
+				}
+
+				alert('Foi!');
+
+			}
+		</script>
+	</head>
+	<body>
+		<form id="form1" method="post" onsubmit="return validar(this)">
+			<output id="msg" style="color: red;"></output>
+			<p>
+				<label>Nome:<font id="ast" style="color: red;">*</font></label>
+				<input type="text" id="nome" size="40">
+			</p>
+			<p>
+				<label>Senha:</label>
+				<input type="password" id="senha1">
+			</p>
+			<p>
+				<label>Confirmação Senha:</label>
+				<input type="password" id="senha2">
+			</p>
+			<p>
+				<input type="submit" value="Enviar">
+			</p>
+		</form>
+	</body>
+</html>
