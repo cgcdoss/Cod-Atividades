@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Calculadora</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			function calcular(op){
+				var n1 = parseInt(document.getElementById('valor1').value);
+				var n2 = parseInt(document.getElementById('valor2').value);
+				var r;
+				if(op=='somar'){
+					r = n1 + n2;
+				}
+				else if(op=='multiplicar') {
+					r = n1 * n2;
+				}
+				else if(op=='dividir'){
+					r = n1 / n2;
+				}
+				else if(op=='subtrair'){
+					r = n1 - n2;
+				}
+				document.getElementById('resultado').value = r;
+			}
+			function limpar(){
+				document.getElementById('resultado').value = '';
+				document.getElementById('valor1').value = '';
+				document.getElementById('valor2').value = '';
+				document.getElementById("valor1").focus();
+			}
+		</script>
+	</head>
+	<body>
+		<h3>Calculadora</h3>
+		<form>
+			<p>
+				<label>Valor 1:</label>
+				<input type="text" name="valor1" id="valor1">
+			</p>
+			<p>
+				<label>Valor 2:</label>
+				<input type="text" name="valor2" id="valor2">
+			</p>
+			<p>
+				<label>Resultado:</label>
+				<output id="resultado"></output>
+			</p>
+			<p>
+				<input type="button" id="somar" value="Somar" onclick="calcular('somar')">
+				<input type="button" id="multiplicar" value="Multiplicar" onclick="calcular('multiplicar')">
+				<input type="button" id="dividir" value="Dividir" onclick="calcular('dividir')">
+				<input type="button" id="subtrair" value="Subtrair" onclick="calcular('subtrair')">
+				<input type="button" value="Limpar" onclick="limpar()">
+			</p>
+		</form>
+	</body>
+</html>
