@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ideias;
 
 import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Cássio Gabriel
- */
 public class Criptografia {
 
     String cripto = "";
@@ -74,7 +65,7 @@ public class Criptografia {
                 b = "1C";
             } else if (b.equals("e") || b.equals("E")) {
                 b = "55";
-            } else if (b.equals("f") || b.equals("F")){
+            } else if (b.equals("f") || b.equals("F")) {
                 b = "8A";
             }
             System.out.println("Substring: " + b + " de " + a.substring(i, i + 1));
@@ -82,6 +73,7 @@ public class Criptografia {
             c += b;
         }
         System.out.println(c);
+        JOptionPane.showMessageDialog(null, "Criptografado:\n" + c);
         cripto = c;
         System.out.println("---------------------------");
     }
@@ -127,5 +119,4 @@ public class Criptografia {
         }
         System.out.println(c);
     }
-
 }
