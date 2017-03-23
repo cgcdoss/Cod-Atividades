@@ -1,8 +1,5 @@
 package ideias;
 
-import java.awt.HeadlessException;
-import javax.swing.JOptionPane;
-
 public class ExecutaCriptografia {
 
     public static void main(String[] args) {
@@ -10,5 +7,4 @@ public class ExecutaCriptografia {
         crip.criptografa();
         crip.descriptografa(crip.getCripto());
     }
-
 }
