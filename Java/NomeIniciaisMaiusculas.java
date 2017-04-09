@@ -27,7 +27,7 @@ public class NomeIniciaisMaiusculas {
 				}
 			}
 		}
-		nomeCompleto = inicial + sb.toString().toString().substring(1);
+		nomeCompleto = inicial + sb.toString().substring(1);
 		System.out.println(nomeCompleto);
 		JOptionPane.showMessageDialog(null, "Nome: " + nomeCompleto);
 	}
