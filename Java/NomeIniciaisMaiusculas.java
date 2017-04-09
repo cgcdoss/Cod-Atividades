@@ -3,11 +3,12 @@ package testes;
 
 import javax.swing.JOptionPane;
 
-public class Substring {
+public class NomeIniciaisMaiusculas {
 	public static void main(String[] args) {
 		String nome = "";
 		String inicial = "";
 		String outrasIniciais = "";
+		String nomeCompleto = "";
 		nome = JOptionPane.showInputDialog(null, "Informe um nome").trim();
 		StringBuilder sb = new StringBuilder(nome); //Instanciando o StringBuilder com a string 'nome'
 		for (int i = 0; i < nome.length(); i++) { //Verificando cada caractere da string 'nome'
@@ -26,6 +27,8 @@ public class Substring {
 				}
 			}
 		}
-		System.out.println(inicial + sb.toString().toString().substring(1));
+		nomeCompleto = inicial + sb.toString().toString().substring(1);
+		System.out.println(nomeCompleto);
+		JOptionPane.showMessageDialog(null, "Nome: " + nomeCompleto);
 	}
 }
