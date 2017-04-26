@@ -1,4 +1,6 @@
-public String capitalizaNome(String nomeCompleto) {
+public class CapitalizarNome {
+
+	public String capitalizaNome(String nomeCompleto) {
 		StringBuilder nome = new StringBuilder(nomeCompleto);
 		String inicial = "";
 		String outrasIniciais = "";
@@ -31,3 +33,4 @@ public String capitalizaNome(String nomeCompleto) {
 			return true;
 		}
 	}
+}
